@@ -2,7 +2,6 @@
 #data processing
 #importing libraries
 import numpy as np
-import matplotlib.pyplot as mtp
 import pandas as pd
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
@@ -62,7 +61,7 @@ print("y_test shape:", y_test.shape)
 
 #feature scaling(final step of data processing)
 #either by normalization or standardization
-#let's use standardization
+#using standardization
 st_x= StandardScaler()  
 X_train= st_x.fit_transform(X_train)  
 X_test= st_x.transform(X_test)  
